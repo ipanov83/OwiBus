@@ -2,7 +2,7 @@ OwiBusPHY v1.0.0
 by Ivaylo Panov — 27.07.2026
 Interrupt-driven half-duplex single-wire physical layer for AVR microcontrollers
 
-OwiBusPHY is a lightweight software-based physical layer driver designed for reliable half-duplex communication over a single GPIO line on AVR microcontrollers.
+OwiBusPHY is a lightweight software-based physical layer driver designed for reliable half-duplex communication over a single GPIO line on AVR microcontrollers. To use it, simply download the .zip file, and add it to Arduino IDE library manager like ZIP-library.
 
 The driver implements an asynchronous serial communication interface without requiring a dedicated UART peripheral. It uses Pin Change Interrupts for receive start detection and Timer2 compare interrupts for accurate bit timing, providing a deterministic and efficient communication layer suitable for embedded systems.
 
