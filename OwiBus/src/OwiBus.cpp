@@ -1,4 +1,4 @@
-/* OwiBusPHY version 1.0.0 from 27.07.2026
+/* OwiBus version 1.0.0 from 27.07.2026
 
 Copyright (c) 2026 Ivaylo Panov
 
