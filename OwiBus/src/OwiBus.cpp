@@ -93,8 +93,9 @@ bool OwiBus::send(uint8_t receiver, uint8_t command, const char *text, uint8_t f
 }
 
 void OwiBus::update() {
-
-  if (_port.available()) {
+  
+  uint8_t count = 0;
+  while (_port.available() && count < 64) {
     uint8_t b = _port.read();
 
     if (_state == WAIT_SYNC) {
@@ -186,7 +187,7 @@ void OwiBus::update() {
         _state = WAIT_RECEIVER;}
     return;}
 
-  }
+ count++;}
 
     if (_state != WAIT_SYNC) {
       if (micros() - _bytetime > 60000UL) {
